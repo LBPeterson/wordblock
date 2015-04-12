@@ -1,8 +1,12 @@
+AB = document.getElementById("addButton");
+if(AB) {
+  AB.addEventListener("click", addWord());
+}
 
 function addWord() {
-  var string = document.getElementById("my-input").value;
+  var word = document.getElementById("my-input").value;
   document.getElementById("my-input").value = "";
-  brands[brands.length] = string;
+  brands.push(word);
   console.log(brands);
   updateList();
 }

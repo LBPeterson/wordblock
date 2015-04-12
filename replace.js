@@ -36,3 +36,5 @@ function findAndReplace(searchText, replacement, searchNode) {
 }
 
 findAndReplace('(Sony|Android|Galaxy|LG|Xperia)', '<span style="background-color: black; color: black">$1</span>');
+
+var brands=[];
